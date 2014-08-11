@@ -1,0 +1,86 @@
+<Level>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-4.65561 6.44377 13.4495" CameraTarget="-0.324998 0 13.9904" CameraZoom="1.86013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+        <Groups>
+            <Group ID="0" Name="None" Visible="true" />
+        </Groups>
+    </EditorSession>
+    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="">
+        <MapContents>
+            <FileIndex_StaticObjects NumOfFiles="5">
+                <File Id="0" Path="static_objects/cellarbase/stairs/stone.dae" />
+                <File Id="1" Path="static_objects/cellarbase/wall/corner_concave_round_short_extension.dae" />
+                <File Id="2" Path="static_objects/cellarbase/wall/default_decayed03.dae" />
+                <File Id="3" Path="static_objects/cellarbase/wall/default_decayed01.dae" />
+                <File Id="4" Path="static_objects/cellarbase/wall/default_decayed02.dae" />
+            </FileIndex_StaticObjects>
+            <FileIndex_Entities NumOfFiles="2">
+                <File Id="0" Path="entities/item/crowbar/crowbar.ent" />
+                <File Id="1" Path="entities/door/castle/castle.ent" />
+            </FileIndex_Entities>
+            <FileIndex_Decals NumOfFiles="0" />
+            <StaticObjects>
+                <StaticObject CastShadows="true" Collides="true" FileIndex="0" Group="0" ID="2" Name="stairs_stone_1" Rotation="0 0 0" Scale="0.75 1 1" Tag="" WorldPos="-0.75 0 8.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="3" Name="wall_corner_concave_round_short_extension_1" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-4.25 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="4" Name="wall_corner_concave_round_short_extension_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="2.75 0 8" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="5" Name="wall_corner_concave_round_short_extension_3" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="2.75 0 15" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="6" Name="wall_corner_concave_round_short_extension_4" Rotation="3.14159 8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-4.25 0 15" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="4" Group="0" ID="10" Name="wall_default_decayed02_1" Rotation="3.14159 -1.5708 3.14159" Scale="1.25 1 1" Tag="" WorldPos="3.75 0 11.5" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="2" Group="0" ID="11" Name="wall_default_decayed03_1" Rotation="3.14159 8.74228e-008 3.14159" Scale="1.25 1 1" Tag="" WorldPos="-0.75 0 16" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="12" Name="wall_default_decayed01_1" Rotation="0 1.5708 0" Scale="1.25 1 1" Tag="" WorldPos="-5.25 0 11.5" />
+            </StaticObjects>
+            <Primitives>
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 5.75" Corner2UV="0 0" Corner3UV="9 0" Corner4UV="9 5.75" EndCorner="9 0 5.75" Group="0" ID="0" Material="F:/SteamLibrary/SteamApps/common/Amnesia The Dark Descent/static_objects/cellarbase/floor/cellarbase_floor.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="1 1 1" TileOffset="0 0 0" WorldPos="-5.25 0 7" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 4.5" Corner2UV="0 0" Corner3UV="11.25 0" Corner4UV="11.25 4.5" EndCorner="11.25 0 4.5" Group="0" ID="1" Material="F:/SteamLibrary/SteamApps/common/Amnesia The Dark Descent/static_objects/cellarbase/floor/cellarbase_floor.mat" Name="Plane" Rotation="0 0 0" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="1 1 1" TileOffset="0 0 0" WorldPos="-5.25 0 12.75" />
+            </Primitives>
+            <Decals />
+            <Entities>
+                <Entity Active="true" FileIndex="1" Group="0" ID="14" Name="castle_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="0.75 0 11.75">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Locked" Value="true" />
+                        <Var Name="OpenAmount" Value="0" />
+                        <Var Name="DisableBreakable" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="0" Group="0" ID="15" Name="crowbar_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-0.25 0 12">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="CustomSubItemTypeName" Value="" />
+                    </UserVariables>
+                </Entity>
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="16" Mesh="" Name="PlayerStartArea_1" Rotation="0 0 0" Scale="1.5 3.25 1.25" Tag="" WorldPos="-3 1.625 13.125">
+                    <UserVariables />
+                </Area>
+            </Entities>
+            <Misc />
+            <StaticObjectCombos />
+        </MapContents>
+    </MapData>
+</Level>
