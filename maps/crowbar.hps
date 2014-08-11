@@ -9,6 +9,13 @@ void UseCrowbarOnDoor(string &in asItem, string &in asEntity)
 	RemoveItem(asItem);
 	SetSwingDoorLocked ("castle_1", false, true);
     PlaySoundAtEntity("", "unlock_door", "castle_1", 0.05, false);
+	AddTimer(asEntity, 0.2, "TimerPlaceCrowbar");
+}
+
+void TimerPlaceCrowbar(string &in asTimer)
+{
+        SetEntityActive("Joint", true);
+        PlaySoundAtEntity("", "puzzle_place_jar.snt", asTimer, 0, false);
 }
 
 void OnEnter()
