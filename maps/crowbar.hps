@@ -1,22 +1,37 @@
 void OnStart()
 {
-	AddUseItemCallback("", "crowbar_1", "castle_1", "UseCrowbarOnDoor", true);
-	
+	AddUseItemCallback("", "crowbar_1", "castle_1", "UsedCrowbarOnDoor", true);
+	AddEntityCollideCallback("crowbar_joint_1", "ScriptArea_1", "CollideAreaBreakDoor", true, 1);
 }
 
-void UseCrowbarOnDoor(string &in asItem, string &in asEntity)
-{
-	RemoveItem(asItem);
-	SetSwingDoorLocked ("castle_1", false, true);
-    PlaySoundAtEntity("", "unlock_door", "castle_1", 0.05, false);
-	AddTimer(asEntity, 0.2, "TimerPlaceCrowbar");
-}
-
-void TimerPlaceCrowbar(string &in asTimer)
-{
-        SetEntityActive("Joint", true);
-        PlaySoundAtEntity("", "puzzle_place_jar.snt", asTimer, 0, false);
-}
+void UsedCrowbarOnDoor(string &in asItem, string &in asEntity)
+ {
+ AddTimer("", 0.2, "TimerSwitchShovel");
+ RemoveItem("crowbar_1");
+ }
+ 
+ 
+void TimerSwitchShovel(string &in asTimer)
+ {
+ PlaySoundAtEntity("","puzzle_place_jar.snt", "", 0, false);
+ SetEntityActive("crowbar_joint_1", true);
+ }
+ 
+ 
+void CollideAreaBreakDoor(string &in asParent, string &in asChild, int alState)
+ {
+ AddPlayerSanity(25);
+ PlayMusic("10_puzzle01.ogg", false, 0.7, 0.1, 10, false);
+ SetSwingDoorLocked("castle_1", false, true);
+ AddPropImpulse("castle_1", 0, 0, -50, "World");
+ SetSwingDoorDisableAutoClose("castle_1", true);
+ SetSwingDoorClosed("castle_1", false, false);
+ SetMoveObjectState("castle_1", 1);
+ PlaySoundAtEntity("","break_wood_metal", "AreaBreakEffect", 0, false);
+ CreateParticleSystemAtEntity("", "ps_hit_wood", "AreaBreakEffect", false);
+ SetEntityActive("crowbar_joint_1", false);
+ SetLocalVarInt("Door", 1);
+ } 
 
 void OnEnter()
 {
