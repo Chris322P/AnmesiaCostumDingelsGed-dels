@@ -1,0 +1,22 @@
+void OnStart()
+{
+	AddUseItemCallback("", "crowbar_1", "castle_1", "UseCrowbarOnDoor", true);
+	
+}
+
+void UseCrowbarOnDoor(string &in asItem, string &in asEntity)
+{
+	RemoveItem(asItem);
+	SetSwingDoorLocked ("castle_1", false, true);
+    PlaySoundAtEntity("", "unlock_door", "castle_1", 0.05, false);
+}
+
+void OnEnter()
+{
+
+}
+
+void OnLeave()
+{
+ 
+}
