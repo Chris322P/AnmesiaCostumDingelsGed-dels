@@ -1,7 +1,7 @@
 void OnStart()
 {
-	AddUseItemCallback("", "crowbar_1", "castle_1", "UsedCrowbarOnDoor", true);
-	AddEntityCollideCallback("crowbar_joint_1", "ScriptArea_1", "CollideAreaBreakDoor", true, 1);
+	AddUseItemCallback("", "crowbar_1", "cellar_wood01_1", "UsedCrowbarOnDoor", true);
+	AddEntityCollideCallback("crowbar_joint_1", "Crowbar_Active", "CollideAreaBreakDoor", true, 1);
 }
 
 void UsedCrowbarOnDoor(string &in asItem, string &in asEntity)
@@ -22,13 +22,13 @@ void CollideAreaBreakDoor(string &in asParent, string &in asChild, int alState)
  {
  AddPlayerSanity(25);
  PlayMusic("10_puzzle01.ogg", false, 0.7, 0.1, 10, false);
- SetSwingDoorLocked("castle_1", false, true);
- AddPropImpulse("castle_1", 0, 0, -50, "World");
- SetSwingDoorDisableAutoClose("castle_1", true);
- SetSwingDoorClosed("castle_1", false, false);
- SetMoveObjectState("castle_1", 1);
- PlaySoundAtEntity("","break_wood_metal", "AreaBreakEffect", 0, false);
- CreateParticleSystemAtEntity("", "ps_hit_wood", "AreaBreakEffect", false);
+ SetSwingDoorLocked("cellar_wood01_1", false, true);
+ AddPropImpulse("cellar_wood01_1", 0, 0, -50, "World");
+ SetSwingDoorDisableAutoClose("cellar_wood01_1", true);
+ SetSwingDoorClosed("cellar_wood01_1", false, false);
+ SetMoveObjectState("cellar_wood01_1", 1);
+ PlaySoundAtEntity("","break_wood_metal", "ScriptArea_1", 0, false);
+ CreateParticleSystemAtEntity("", "ps_hit_wood", "ScriptArea_1", false);
  SetEntityActive("crowbar_joint_1", false);
  SetLocalVarInt("Door", 1);
  } 
